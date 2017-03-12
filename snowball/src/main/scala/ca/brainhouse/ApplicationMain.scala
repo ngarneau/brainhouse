@@ -1,4 +1,4 @@
-package com.example
+package ca.brainhouse 
 
 import akka.actor.ActorSystem
 

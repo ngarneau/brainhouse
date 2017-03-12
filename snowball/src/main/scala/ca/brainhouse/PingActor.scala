@@ -1,4 +1,4 @@
-package com.example
+package ca.brainhouse 
 
 import akka.actor.{Actor, ActorLogging, Props}
 
@@ -9,7 +9,7 @@ class PingActor extends Actor with ActorLogging {
   val pongActor = context.actorOf(PongActor.props, "pongActor")
 
   def receive = {
-  	case Initialize => 
+  	case Initialize =>
 	    log.info("In PingActor - starting ping-pong")
   	  pongActor ! PingMessage("ping")	
   	case PongActor.PongMessage(text) =>
