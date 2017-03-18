@@ -21,7 +21,8 @@ libraryDependencies ++= {
     "com.outworkers"  %% "phantom-dsl" % phantomV,
     // "org.allenai.openie" %% "openie" % "4.2.6",
     "org.scalacheck" %% "scalacheck" % "1.13.4" % "test",
-    "org.scalatest"     %% "scalatest" % scalaTestV % "test"
+    "org.scalatest"     %% "scalatest" % scalaTestV % "test",
+    "org.scalaz" %% "scalaz-core" % "7.2.10"
   )
 }
 
